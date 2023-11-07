@@ -32,7 +32,7 @@ function win(userChoice,computerChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerText = computerScore;
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} vence a ${convertToWord(computerChoice)}${smallCompWord}. Tu ganas!`; //quítale el small en los dos sitios
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} vence a ${convertToWord(computerChoice)}${smallCompWord}. Tú ganas!`; //quítale el small en los dos sitios
     userChoice_div.classList.add('green-glow');
     setTimeout(function () { userChoice_div.classList.remove('green-glow')}, 1000);
 }
@@ -48,7 +48,7 @@ function lose(userChoice,computerChoice) {
     const smallUserWord = "(usuario)".fontsize(2).sub(); //si no quieres que salga esto comenta esta línea y la siguiente 
     const smallCompWord = "(rival)".fontsize(2).sub();
     const userChoice_div = document.getElementById(userChoice)
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} pierde contra ${convertToWord(computerChoice)}${smallCompWord}. Tu pierdes!`; //quítale el small en los dos sitios
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} pierde contra ${convertToWord(computerChoice)}${smallCompWord}. Tú pierdes!`; //quítale el small en los dos sitios
     userChoice_div.classList.add('red-glow');
     setTimeout(function () { userChoice_div.classList.remove('red-glow')}, 1000);
 }
